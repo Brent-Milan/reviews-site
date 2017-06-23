@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>One Lounge Review</title>
+</head>
+<body>
+<h1>One Lounge Review</h1>
+
+<p th:text="${onereview.id} + ',' + ${onereview.title} + ',' + ${onereview.reviewCategory}" />
+<img th:src="${onereview.imageUrl}"/>
+</body>
+</html>
