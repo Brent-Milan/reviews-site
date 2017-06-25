@@ -6,7 +6,9 @@
 <body>
 <h1>One Lounge Review</h1>
 
-<p th:text="${onereview.id} + ',' + ${onereview.title} + ',' + ${onereview.reviewCategory}" />
+<p th:text="'Movie ID:  ' + ${onereview.id}"/>
+<p th:text="'Movie title:  ' + ${onereview.title}" />
+<p th:text="'Genre:  ' + ${onereview.reviewCategory}" />
 <img th:src="${onereview.imageUrl}"/>
 </body>
 </html>

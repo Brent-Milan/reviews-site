@@ -22,7 +22,7 @@
   <p><a class="btn btn-primary btn-lg" href="http://localhost:8080/onereview/?id=10999" role="button">See Our Review</a></p>
 </div>   
  
-
+<h2>All Reviews:</h2>
 <a th:each="review: ${reviewsAsCollection}" th:href="@{http://localhost:8080/onereview/(id=${review.id})}"><div th:text="${review.title}" ></div></a>
 
 
